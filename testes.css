@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #68aff1; 
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #dce9f5; 
+    position: fixed;
+    top: 80px; 
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(18, 109, 221, 0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #4690f0; 
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Konten */
+.content-container {
+    margin-left: 200px; 
+    padding-top: 80px; 
+    flex: 1;
+    padding-bottom: 40px; 
+}
+
+.section {
+    padding: 20px;
+}
+
+.hero {
+    background: url('path/to/your/image.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    color: white; 
+    position: relative; 
+}
+
+.hero::after {
+    content: "";
+    background-image: url(workwithlaptop.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+}
+
+.hero-content {
+    position: relative; 
+    z-index: 2;
+    padding: 100px 20px; 
+    text-align: center; 
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0 0 40px;
+}
+
+.hero .btn {
+    background-color: #4690f0; ; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero .btn:hover {
+    background-color: rgba(18, 109, 221, 0.1); 
+}
+
+.profil {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    text-align: center;
+    max-width: 500px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.biodata-table {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.biodata-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.biodata-table td {
+    padding: 8px;
+}
+
+.audio-video {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.media-card {
+    margin: 10px;
+    max-width: 300px;
+}
+
+.media-video,
+.media-audio {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tentang {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tentang-card {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.berita {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.berita-card {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(184, 239, 217, 0.9);
+    text-align: center;
+    padding: 20px;
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+}
